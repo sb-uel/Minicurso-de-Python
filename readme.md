@@ -1,6 +1,9 @@
 * ***Link* para inscrição**: 
 [www.uel.br/eventos/sigec/?id=11796⁠](https://www.uel.br/eventos/sigec/?id=11796⁠)
 
+* ***Playlist* com as transmissões ao vivo**: 
+[www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD](https://www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD)
+
 
 
 * **Apostila** ([Codifica](https://www.facebook.com/codificajr/)): 
