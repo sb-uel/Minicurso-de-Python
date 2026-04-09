@@ -4,7 +4,8 @@
 * ***Playlist* com as transmissões ao vivo**: 
 [www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD](https://www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD)
 
-
+* **Pasta do *Google Drive* com os materiais**: 
+[drive.google.com/drive/folders/1xxgl0JjnfPwo-5lwXFCT0R6dq9qOzBJL](https://drive.google.com/drive/folders/1xxgl0JjnfPwo-5lwXFCT0R6dq9qOzBJL)
 
 * **Apostila** ([Codifica](https://www.facebook.com/codificajr/)): 
 [drive.google.com/open?id=1XX-EbFRS2Og4PDoVmzo5h29ABg-qqiTD](https://drive.google.com/file/d/1XX-EbFRS2Og4PDoVmzo5h29ABg-qqiTD/view)
