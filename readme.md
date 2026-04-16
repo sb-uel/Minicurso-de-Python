@@ -1,8 +1,11 @@
+
+
 * ***Link* para inscrição**: 
 [www.uel.br/eventos/sigec/?id=11796⁠](https://www.uel.br/eventos/sigec/?id=11796⁠)
 
 * ***Playlist* com as transmissões ao vivo**: 
 [www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD](https://www.youtube.com/playlist?list=PL4Z8-a0-774s8u2Mq76adBtiqDsbPgekD)
+(no canal [@RamoIEEEUEL](https://www.youtube.com/@RamoIEEEUEL))
 
 * **Pasta do *Google Drive* com os materiais**: 
 [drive.google.com/drive/folders/1xxgl0JjnfPwo-5lwXFCT0R6dq9qOzBJL](https://drive.google.com/drive/folders/1xxgl0JjnfPwo-5lwXFCT0R6dq9qOzBJL)
