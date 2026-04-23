@@ -1,0 +1,93 @@
+\input{../início}	
+
+\iniciar{4}{Arquivos}{TXT e CSV}		  
+
+
+
+\section{Texto}
+
+\begin{frame}[containsverbatim]{Leitura}
+%	conteúdo...
+
+	Ler as linhas de um arquivo:
+
+	\begin{verbatim}
+		with open('nome_do_arquivo.txt', 'r') as leitor:			
+			for linha in leitor:				
+				print(linha)
+	\end{verbatim}
+	
+	\vfill
+	
+	Caso o arquivo seja codificado em UTF-8:
+	
+	\begin{verbatim}
+		with open('nome_do_arquivo.txt', 'r', encoding='utf-8') as leitor:			
+			for linha in leitor:				
+				print(linha)
+	\end{verbatim}
+\end{frame}
+
+\begin{frame}[containsverbatim]{Escrita}
+	%	conteúdo...
+	
+	Escrever em um arquivo:
+	
+	\begin{verbatim}
+		with open('nome_do_arquivo.txt', 'w') as escritor:			
+			print(linha, file=escritor)
+	\end{verbatim}
+	
+	\vfill
+	
+	Para codificar em UTF-8:
+	
+	\begin{verbatim}
+		with open('nome_do_arquivo.txt', 'w', encoding='utf-8') as escritor:									
+			print(linha, file=escritor)
+	\end{verbatim}
+\end{frame}
+
+\section{CSV}
+
+\begin{frame}[containsverbatim]{Leitura}
+	%	conteúdo...
+	
+	\texttt{import csv}
+	
+	Ler as linhas e colunas de um arquivo CSV:
+	
+	\begin{verbatim}		
+		
+		with open('nome_do_arquivo.csv', 'r') as leitor:			
+			leitor_csv = csv.reader(leitor, delimiter=';')  
+			for linha in leitor_csv:
+				for coluna in linha:						
+					print(coluna)
+	\end{verbatim}
+	
+	As linhas são retornadas como listas de colunas.
+	
+	Altere a codificação do leitor do arquivo ou o delimitador do leitor de CSV se for necessário.
+	
+\end{frame}
+
+\begin{frame}[containsverbatim]{Escrita}
+	%	conteúdo...
+	
+%	\texttt{import csv}
+	
+	Escrever em um arquivo CSV
+	
+	\begin{verbatim}				
+		with open('nome_do_arquivo.csv', 'w', newline='') as escritor:			
+			escritor_csv = csv.writer(escritor, delimiter=';')  
+			escritor_csv.writerow(linha)
+	\end{verbatim}
+	
+	As linhas são listas de colunas.
+\end{frame}
+
+
+
+\terminar{4}

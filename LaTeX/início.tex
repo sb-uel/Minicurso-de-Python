@@ -1,0 +1,77 @@
+\documentclass[aspectratio=169,12pt]{beamer}
+%	\usetheme{Antibes}
+	\usetheme{Frankfurt}
+
+%\usepackage{amsmath}
+
+\usepackage{graphics}
+\graphicspath{{../img}}
+
+%\definecolor{VerdeApostila}{rgb}{0.058823529411764705, 0.6862745098039216, 0.30980392156862746}
+%\usecolortheme[named=VerdeApostila]{structure}
+
+\newcommand{\modo}[2]{
+%	#2
+} % claro ou escuro
+\newcommand{\quebra}{
+	\break
+}
+
+\newcommand{\iniciar}[3]{
+
+	\begin{frame}[plain]
+		\maketitle
+		\centering
+		
+		\textbf{Aula #1}: 
+		#2 
+		 
+		#3
+	  \end{frame}
+
+%	\section*{Nesta aula}
+	\begin{frame}{Nesta aula}
+		\begin{multicols}{3}
+			\tableofcontents
+		\end{multicols}	
+	  \end{frame}  
+
+}
+
+\newcommand{\terminar}[1]{
+
+\section{Exercícios #1}
+\begin{frame}[allowframebreaks]{Exercícios}	% containsverbatim
+	\input{aula#1_exercícios}	
+  \end{frame}	
+  
+\section*{}  
+
+\begin{frame}[plain]
+	\maketitle
+	
+	\centering	
+	\Large
+	\textbf{Dúvidas?}
+		
+	\url{akira.demenech@uel.br}
+  \end{frame}
+
+\end{document}
+
+}
+
+\input{../cabeçalhos}
+
+\title{Minicurso de Python}
+\author{Guilherme Akira Demenech Mori}
+\date{}
+
+\institute{
+%	\link{https://www.facebook.com/codificajr/}{
+%		\includegraphics[width=0.3\textwidth]{\modo{Logo pronta.pdf}{logo clara.pdf}}
+%	}
+}
+
+\begin{document}
+	\modo{}{\color{white}}

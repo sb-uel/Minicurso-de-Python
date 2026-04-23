@@ -1,0 +1,217 @@
+\input{../início}
+
+\iniciar{2}{Condicionais e Laços}{Fluxo}
+
+\section{Comparações}
+\begin{frame}{Mais operações}
+	
+	Para valores de todos os tipos:
+	
+%	\begin{multicols}{2}
+		\begin{itemize}
+			\item \textbf{Igualdade}: 
+				\texttt{x == y} 
+			
+			\item \textbf{Desigualdade}: 
+				\texttt{x != y}
+			
+		\end{itemize}	
+%	\end{multicols}	
+	
+	\vfill
+	
+	Para valores \textbf{int}, \textbf{float}, \textbf{str}, \textbf{tuple}, \textbf{list}:
+	
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item \textbf{Menor que}: 
+				\texttt{x < y} 
+			
+			\item \textbf{Menor ou igual que}: 
+				\texttt{x <= y}
+			
+			\item \textbf{Maior que}: 
+				\texttt{x > y} 
+			
+			\item \textbf{Maior ou igual que}: 
+				\texttt{x >= y}									
+		\end{itemize}	
+	\end{multicols}			
+  \end{frame}
+  
+\begin{frame}{Contém} 
+	Verificar se o composto (\textbf{tuple}, \textbf{list} ou \textbf{set}) contém o valor:
+	
+	\texttt{valor in nomevariavel}
+	
+\vfill	
+	
+	Verificar se o \textbf{dict} contém a chave:
+	
+	\texttt{chave in nomevariavel}
+	
+\vfill	
+	
+	Verificar se uma \textbf{str} contém uma outra \textbf{str}:
+	
+	\texttt{valors in nomevariavels}
+  \end{frame}	
+
+\section{Condicionais} 
+\begin{frame}[containsverbatim]{Se .... senão ...}
+%	\begin{multicols}{2}			
+	
+	Executa as linhas dentro do bloco \texttt{if} se a condição for satisfeita.	
+	
+	\begin{verbatim}
+if condicao:
+		acaosesim
+	\end{verbatim}
+	
+	\vfill
+
+	Executa as linhas dentro do bloco \texttt{else} se a condição não for satisfeita.	
+
+\begin{verbatim}
+if condicao:
+		acaosesim
+else:	
+		acaosenao
+\end{verbatim}	
+%	\end{multicols}	
+  \end{frame}
+  
+\begin{frame}[containsverbatim]{Condicionais aninhados}  			
+	
+%	\begin{multicols}{2}
+	Executa as linhas dentro do bloco \texttt{elif} se as condições anteriores não forem satisfeitas, mas a sua for.	
+	
+	\texttt{else} é executada se nem \texttt{if}, nem nenhum \texttt{elif} forem.
+	
+	\begin{verbatim}
+if condicao1:
+		acaosesim1
+elif condicao2:	
+		acaosenao1sim2
+elif condicao3:
+		acaosenao12sim3	
+else:	
+		acaosenao123
+	\end{verbatim}
+\end{frame}	
+\begin{frame}[containsverbatim]%{Condicionais aninhados}	
+
+	Você pode colocar condicionais dentro de condicionais também.
+	
+	\begin{verbatim}
+if condicao1:
+		if condicao2:
+				acaosesim12
+		else:	
+				acaosesim1nao2
+else:	
+		if condicao3: 
+				acaosenao1sim3
+		else:	
+				acaosenao13
+	\end{verbatim}
+%	\end{multicols}	
+  \end{frame}
+
+\section{Laços de repetição}
+
+\begin{frame}[containsverbatim]{Enquanto}				
+		
+		Executa as linhas dentro do bloco \texttt{while} enquanto a condição for satisfeita.	
+		
+		\begin{verbatim}
+while condicao:
+		acaoenquantosim
+		\end{verbatim}
+		
+		Lembre-se de programar seu código de maneira que laços \texttt{while} não fiquem presos sem alteração da condição.		
+				 				 		
+  \end{frame}
+
+\begin{frame}[containsverbatim]{Para ... em ....}				
+	
+	Executa as linhas dentro do bloco \texttt{for} para cada valor de um composto, atribuindo a uma variável.	
+	
+	\begin{verbatim}
+for nomevariavel in composto:
+		acaoparacadavalor
+	\end{verbatim}				
+	
+%	\vfill 
+	
+	
+	
+  \end{frame}
+  
+\frame{
+	A função \texttt{range(n)} cria um composto com os inteiros de \texttt{0} até \texttt{n-1}, nessa ordem, e pode ser utilizado no \texttt{for}.
+	\hfill 
+	\# 
+	igual a \texttt{range(0,n)} e \texttt{range(0,n,1)}
+	
+	
+	\texttt{range(m,n)} com os inteiros de \texttt{m} até \texttt{n-1}.
+	\hfill 
+	\# 
+	igual a \texttt{range(m,n,1)}
+	
+	\texttt{range(m,n,s)} com os inteiros entre \texttt{m} e \texttt{n-1} começando em \texttt{m} e somando \texttt{s}.
+}  
+  
+\begin{frame}[containsverbatim]{Quebras}				
+\begin{multicols}{2}	
+	
+	\texttt{break} sai da repetição e vai para a linha depois do fim do laço	
+	
+\begin{verbatim}
+while condicao:
+		acaoenquantosim
+		
+		if condicaoparada:
+				break 
+				
+		maisacaoenquantosim
+		
+acoesposteriores				
+\end{verbatim}	
+	
+	\texttt{continue} pula o resto do bloco e vai para a próxima repetição, do começo do laço 				
+
+\begin{verbatim}
+for nomevariavel in composto:
+		acaoparacadavalor
+	
+		if condicaodesalto:
+				continue 
+		
+		maisacaoparacadavalor						
+\end{verbatim}
+
+\end{multicols}	
+\end{frame}  
+
+% Tabs ou espaços?
+
+\section{Indentação}
+\begin{frame}{Tabs ou espaços?}
+	
+	\Large
+	Para avançar um nível (um condicional ou laço, por exemplo), dê tab ou 4 espaços.
+	
+	\LARGE
+	Utilize consistentemente, ou só tabs, ou só 4 espaços.
+	
+%	\vfill 
+	
+	
+  \end{frame}
+  
+\frame{\Huge Aninhe estruturas condicionais e laços à vontade.}  
+
+
+\terminar{2}

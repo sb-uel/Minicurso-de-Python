@@ -1,0 +1,419 @@
+\begin{enumerate}
+	\modo{}{\color{white}}
+
+	% subtração não-negativa 
+	\item Crie um programa que exiba a subtração de dois números, substituindo-a por 0 caso ela for negativa.
+
+	% divisor diferente de 0
+	\item Crie um programa que exiba a divisão de dois números caso o divisor for diferente de 0 e exiba uma mensagem de erro caso não exista resultado.
+	
+	Altere o programa para a mensagem de erro ser diferente para $\frac{0}{0}$, informando que o resultado é indeterminado. 
+
+\quebra
+
+	% graus, grados e radianos 
+	% agudo, reto, obtuso, raso 
+	\item Crie um programa que faça a conversão de um ângulo escrito pelo usuário. 
+	Receba do usuário qual unidade de medida foi inserida na entrada (graus ou radianos)
+	e exiba-a convertida para a outra unidade.
+	
+	Tente alterar o programa para incluir também entrada ou saída em grados.
+	
+	\begin{multicols}{2}	
+		\begin{equation*}
+			\frac{10}{9} \text{gr} = 1^\circ
+		\end{equation*}
+		
+		\begin{equation*}
+			1 \text{gr} = 0,9^\circ
+		\end{equation*}
+	\end{multicols}
+	
+	Inclua também no programa a exibição de se o ângulo inserido é agudo ($< 90^\circ$), reto ($= 90^\circ$), obtuso ($> 90^\circ$ e $< 180^\circ$), raso ($= 180^\circ$), reflexo ($> 180^\circ$ e $< 360^\circ$) ou completo ($= 360^\circ$).
+	
+	% Celsius, Fahrenheit e Kelvin  
+	% água está sólida, líquida ou gasosa?
+	\item Crie um programa que faça a conversão de uma temperatura escrita pelo usuário.
+	Receba do usuário qual unidade de medida foi inserida na entrada (graus Celsius, Fahrenheit ou Kelvin)
+	e a unidade para converter e a exiba.	
+	
+	\begin{multicols}{2}	
+		\begin{equation*}
+			C = K - 273,16
+		\end{equation*}
+		
+		\begin{equation*}
+			K = C + 273,16
+		\end{equation*}
+		
+		\begin{equation*}
+			F = 1,8(K - 273,16) + 32
+		\end{equation*}
+		
+		\begin{equation*}
+			K = \frac{F-32}{1,8} + 273,16 
+		\end{equation*}
+	\end{multicols}
+	
+	Inclua também no programa a exibição de se a água destilada a 1 atm (pressão do nível do mar) estaria sólida ($< 0^\circ C$), líquida ($> 0^\circ C$ e $< 100^\circ C$), gasosa ($> 100^\circ C$) ou se estaria em algum dos pontos de transição de estado.  	
+
+	% Ano bissexto 
+	% juliano 
+	% gregoriano 
+	\item Crie um programa que receba um ano do usuário e informe se ele é bissexto ou não.
+	
+	Anos múltiplos de 4 são bissextos no calendário juliano.
+	
+	Anos múltiplos de 400 ou de 4, mas não de 100, são bissextos no calendário gregoriano.
+	
+	Exiba se o ano é bissexto para cada calendário.
+	% repetido 
+	
+	
+\textbf{Altere os exercícios anteriores para repetir as ações várias vezes, aceitando entradas e exibindo resultados até alguma condição de parada ser satisfeita (crie algum critério e informe o usuário)}
+
+\quebra	
+	
+	\item Crie um programa que exiba cada linha de texto escrita pelo usuário até que seja inserida uma linha vazia.
+	
+	\item Crie um programa que receba vários números, até que seja inserido 0, e exiba a soma deles.
+	
+	\item Crie um programa que exiba a soma de dois números escritos pelo usuário, repetindo a entrada de dados e o cálculo da soma até que os dois números inseridos sejam 0.
+	
+	Altere o programa para parar quando o usuário inserir uma linha vazia, sem nenhum número.		
+	
+\quebra	
+
+	% distância entre pontos com d dimensões 
+	\item Faça um programa que exiba a distância euclidiana entre dois pontos definidos no código.
+	
+	\item Faça um programa que receba das coordenadas de dois pontos e exiba a distância euclidiana entre eles. 
+	
+	Defina as dimensões (quantidades de eixos) no código, permitindo alteração fácil.	
+
+\quebra	
+	
+	% heron com vetores 
+	\item Faça um programa que receba os comprimentos dos lados $l_1$, $l_2$ e $l_3$ de um triângulo e exiba a área de acordo com o Teorema de Heron
+	
+	\begin{equation*}
+		A = \sqrt{p(p-l_1)(p-l_2)(p-l_3)}
+	\end{equation*}	
+	
+	Onde $p$ é o semiperímetro:
+	
+	\begin{equation*}
+		p = \frac{l_1+l_2+l_3}{2}
+	\end{equation*}
+	
+	Use laços de repetição e listas para diminuir o código.
+	
+\quebra	
+	
+	% é um triângulo mesmo?
+	\item Faça um programa que receba os comprimentos dos lados $a$, $b$ e $c$ e informe se eles podem construir um triângulo plano.
+	
+	A condição de existência do triângulo é $a < b + c$, $b < a + c$ e $c < a + b$.
+	
+	\item Faça um programa que receba os comprimentos dos lados $a$, $b$ e $c$ de um triângulo e informe se ele é 
+	equilátero (todos os comprimentos são iguais), 
+	isósceles (somente dois lados têm o mesmo comprimento)
+	ou escaleno (todos os lados são diferentes).
+	
+	\item Faça um outro programa que receba as medidas dos vários lados de uma figura geométrica e informe se ela é um polígono regular (todos os lados têm o mesmo comprimento) ou não.
+	
+	Faça de duas maneiras: 
+	a primeira recebendo todos os lados até ser inserido 0 
+	e a segunda recebendo a quantidade de lados primeiro e depois recebendo todos os lados, parando ao ter a quantidade informada. 
+	 
+
+
+	% bhaskara se for quadrática, linear se não for	
+	\item Faça um programa que receba os coeficientes $a$, $b$ e $c$ de uma equação $ax^2 + bx + c = 0$ e exiba as raízes $x_1$ e $x_2$ se a equação for quadrática ou a raiz $x$ se for uma equação linear.
+	
+	Caso a equação quadrática não tiver solução real ($\Delta < 0$), exiba uma mensagem de erro. 
+
+	Também exiba informações de erro se a equação linear não tiver solução única ($b = c = 0$) ou se não tiver solução ($b = 0$ e $c \ne 0$).
+
+	% Sistema linear genérico 
+	\item Faça um programa que receba os coeficientes $A_{11}$, $A_{21}$, $A_{22}$, $A_{31}$, $A_{32}$, $A_{33}$ .... $A_{i1}$ ... $A_{ii}$, $b_1$, $b_2$, $b_3$ ... $b_i$ de um sistema de equações lineares escalonado e exiba os valores de $x_1$, $x_2$, $x_3$ ... $x_i$.		
+
+	Defina $i$ no código ou receba do usuário antes da leitura.	 
+
+\quebra
+
+	% Números de 1 a 10
+	\item Crie um programa que exiba os inteiros de 1 a 10 (incluindo ambos). 
+
+	% Números de 1 a n
+	\item Crie um programa que exiba os inteiros de 1 a $n$.
+
+	Faça versões com e sem entrada de dados
+
+	% Tabuada 
+	\item Crie um programa que exiba a tabuada de $k$.
+
+	Altere o programa para exibir $n$ linhas da tabuada.  
+
+	% Triângulo de Pascal 
+	\item Crie um programa que exiba as primeiras $n$ linhas do Triângulo de Pascal. 
+	
+	\textbf{Dica}:
+	para exibir um valor sem quebrar a linha ao final, use a opção \texttt{sep}
+	
+	\begin{verbatim}
+		print('Não será quebrada', sep='')
+	\end{verbatim}
+
+	% Fatorial 
+	\item Crie um programa que calcule o fatorial de $n$.
+	
+	\begin{equation*}
+		n! = 1 \times 2 \times 3 \times .... \times n
+	\end{equation*}	
+	
+	Lembre-se que $0! = 1$.
+	Exiba uma mensagem de erro caso $n < 0$.
+	
+
+	\item Crie um programa que calcule o arranjo simples.
+	
+	\begin{equation*}
+		A^k_n = \frac{n!}{(n-k)!} = (n-k+1) (n-k+2) (n-k+3) .... n
+	\end{equation*}
+
+	% Número binomial 
+	\item Crie um programa que calcule o número binomial de $n$ na classe $k$.
+	
+	\begin{equation*}
+		\binom{n}{k} = C^k_n = \frac{n!}{k!(n-k)!}
+	\end{equation*} 
+	
+	Exiba uma mensagem de erro caso $n < 0$, $k < 0$ ou $n < k$.
+
+\quebra 	
+
+	% Fibonacci 
+	\item Faça um programa que exiba os primeiros $n$ termos da sequência de Fibonacci. 
+	Os primeiros termos são $F_0 = 0$ e $F_1 = 1$ e cada termo seguinte é a soma dos dois anteriores.
+	
+	\begin{equation*}
+		F_n = F_{n-1} + F_{n-2}
+	\end{equation*}
+	
+	Altere o programa para aceitar $n < 0$ também.
+	
+	\begin{equation*}
+		F_{n+2} - F_{n+1} = F_n 
+	\end{equation*}		
+	
+	Tente também fazer essa alteração com somente um laço de repetição e executando o condicional uma vez.
+	
+	\item Faça um programa que exiba os primeiros $n$ termos de uma sequência parecida com a Fibonacci.
+	Receba os $k$ termos iniciais e calcule cada termo seguinte como a soma dos $k$ termos anteriores. 
+	
+	\begin{equation*}
+		T_n = T_{n-1} + T_{n-2} + T_{n-3} + ... + T_{n-k+1} + T_{n-k}
+	\end{equation*}
+	
+	Altere o programa para aceitar $n < 0$ também.
+	
+	\begin{equation*}
+		T_{n+k} - T_{n+k-1} - T_{n+k-2} - T_{n+k-3} - ... - T_{n+1} = T_n 
+	\end{equation*}		
+	
+	 
+	\item Crie um programa que receba um número inteiro $p$ e exiba se ele é primo, composto ou nenhum.
+	
+	Um inteiro $p$ é primo se ele só for divisível por 1, -1, $p$ e $-p$ (sendo esses quatro distintos). 	
+	Um inteiro é composto se for divisível por mais do que estes quatro números.
+	0, -1 e 1 não são nem compostos, nem primos.
+	
+
+	
+
+\quebra
+
+	% 27 PA
+	\item Crie um programa que 
+	receba os valores de $a_1$, $r$ e $n$ 
+	e exiba os primeiros $n$ termos de uma 
+	Progressão Aritmética (PA).
+
+	\begin{equation*}			
+		a_n = a_{n-1} + r
+	\end{equation*}	
+
+	Faça a soma termo a termo e também calcule com a fórmula:
+
+	\begin{equation*}
+		S_n = n\frac{a_1 + a_n}{2} = n\frac{2 a_1 + r(n - 1)}{2}
+	\end{equation*}
+
+	Exiba a soma feita das duas formas.		
+
+	% 28 PG
+	\item Crie um programa que 
+	receba os valores de $a_1$, $q$ e $n$
+	e exiba os primeiros $n$ termos de uma 
+	Progressão Geométrica (PG).
+
+	\begin{equation*}
+		a_n = a_{n-1} q
+	\end{equation*}	
+
+	Faça a soma termo a termo e também calcule com a fórmula:
+
+	\begin{equation*}
+		S_n = \frac{a_n q - a_1}{q - 1} = a_1 \frac{q^n - 1}{q - 1}
+	\end{equation*}
+
+	Exiba a soma feita das duas formas.
+
+
+	% Juros simples 
+	\item Crie um programa que receba o valor do capital $C$, da taxa de juros simples $i$, o tempo $t$ e exiba o montante $M_t$ de acordo com a fórmula:
+	\begin{multicols}{2}
+		\begin{equation*}
+			J_t = C i t
+		\end{equation*}	
+
+		\begin{equation*}
+			M_t = C + J_t
+		\end{equation*}	
+	\end{multicols}
+	Altere o programa para calcular com a fórmula:		
+	\begin{equation*}
+		M_t = C (1 + i t) 
+	\end{equation*}
+	
+	Altere também o programa para calcular o montante período a período 
+	\begin{multicols}{2}
+		\begin{equation*}
+			M_0 = C
+		\end{equation*}
+		
+		\begin{equation*}
+			M_t = M_{t-1} + C i
+		\end{equation*}
+	\end{multicols}	
+	% com parcelas		
+	Altere o programa para, a cada termo, receber do usuário o pagamento de uma parcela e descontar do montante, encerrando o programa quando o valor for quitado.		
+
+\quebra	 
+
+	% Juros compostos 
+	\item Crie um programa que receba o valor do capital $C$, da taxa de juros compostos $i$, o tempo $t$ e exiba o montante $M_t$ de acordo com a fórmula:
+	\begin{equation*}
+		M_t = C (1 + i)^t
+	\end{equation*}	
+	Altere também o programa para calcular o montante período a período 
+	\begin{multicols}{2}	
+		\begin{equation*}
+			M_0 = C
+		\end{equation*}		
+
+		\begin{equation*}
+			M_t = M_{t-1} (1 + i)
+		\end{equation*}
+	\end{multicols}
+	% com parcelas		
+	Altere o programa para, a cada termo, receber do usuário o pagamento de uma parcela e descontar do montante, encerrando o programa quando o valor for quitado. 
+
+	% Média
+	\item Crie um programa que receba as notas das avaliações 1, 2, 3.... $n$ e seus pesos e exiba a média ponderada delas.
+
+	% Votos válidos 
+	\item Faça um programa que receba a quantidade de votos dos candidatos 1, 2, 3.... $n$, de votos brancos e votos nulos e exiba as porcentagens de votos válidos de cada um dos candidatos.			 
+
+	% Receita 
+	\item Faça um programa que receba as quantidades de $n$ ingredientes e seus nomes, o tamanho da porção da receita e o tamanho da porção desejada e exiba os nomes e as quantidades necessárias para a porção esperada.	
+
+	% Matrículas e notas 
+	\item Faça um programa em que estejam registrados os números de matrícula e os nomes dos estudantes de uma turma. 
+	
+	Receba uma matrículas do usuário.
+	Para cada matrícula, exiba o nome do estudante, se a matrícula já estiver registrada. 
+	
+	Caso a matrícula não estiver registrada, receba o nome do estudante e registre-o.
+	
+	Altere o programa para registrar as notas também.
+	Receba do usuário se ele quer inserir mais notas numa matrícula, editar o nome ou exibir as informações já registradas.
+	
+	\item Faça um programa que receba os votos de candidatos registrados com número e nome. 
+	Defina os nomes e números dos candidatos no código.
+	
+	Cada número recebido deve ser contabilizado para o candidato registrado e exibir seu nome.
+	
+	Se o número não tiver candidato registrado, considere e exiba voto nulo.
+	
+	Se o voto for 0, considere e exiba voto branco.
+	
+	Pare de receber votos quando a quantidade máxima $v$ de votantes da seção (número definido no código) 
+	for atingido ou quando for inserido número negativo (caso a seção seja fechada com abstenções ao fim do horário).
+	
+	Ao encerrar a votação, exiba as quantidades de votos de cada candidato, brancos e nulos
+	 e calcule as porcentagens de votos válidos para os candidatos.
+	 
+\quebra	 
+
+	% Média, mediana e moda 
+	\item Faça um programa que calcule a média, a mediana e a moda dos valores de uma lista.
+
+	\item Faça um programa que calcule a média, a mediana e a moda das chaves de um dicionário, no qual os valores associados às chaves indicam suas frequências.
+
+	% decomposição em primos 	
+	\item Faça um programa que exiba a decomposição em fatores primos de um inteiro. 
+	
+	Faça duas versões: exibindo os fatores repetidos e exibindo os fatores com expoentes, se forem repetidos. 
+	
+	% lista de divisores 
+	\item Faça um programa que liste todos os divisores positivos de um inteiro.
+	
+	% números perfeitos
+	\item Faça um programa que informe se um inteiro é um número perfeito: 
+	é igual à metade da soma dos seus divisores.
+	
+	% números amigos 
+	\item Faça um programa que informe se dois inteiros são números amigos: 
+	a soma dos divisores de um é igual ao dobro do outro.
+	
+	Altere o programa para aceitar mais inteiros e verifique se formam um ciclo de números amigos:
+	a soma dos divisores do primeiro é o dobro de outro, cuja soma dos divisores é o dobro de um terceiro.... 
+	até que a soma dos divisores do último é o dobro do primeiro.
+
+\quebra	
+	
+	\item Faça um programa que receba um inteiro e repetidamente aplique as operações
+	\begin{equation*}
+		\begin{cases}
+			\frac{n}{2}	& \text{se $n$ for par}
+			\\ 3n + 1	& \text{se $n$ for ímpar}
+		\end{cases}
+	\end{equation*}   
+	até $n$ ser 1.
+	
+	Exiba todos os passos.
+	
+	Altere o programa para receber vários inteiros e, para cada um, mostrar seus passos.
+	
+	Crie um dicionário para não precisar recalcular as operações se repetir algum valor de $n$.
+	
+	\item Crie um programa que percorra um dicionário a partir de uma chave inicial. 
+	
+	Para cada chave, acesse seu valor e utilize-o como a próxima chave. 
+	
+	Se o valor de uma chave não for outra chave do dicionário, encerre o percorrimento.
+	
+	\item Crie um programa que percorra um dicionário a partir de uma chave inicial e identifique se há algum ciclo fechado.
+	
+	Utilize o algoritmo de detecção de ciclos de Floyd (lebre e tartaruga):
+	percorra simultaneamente duas vezes, a cada passo da tartatuga, avance a lebre duas vezes.
+	
+	Quando a lebre atingir o final, sabe-se que não há ciclo.
+	
+	Se a lebre e a tartaruga estiverem na mesma posição em algum momento, um ciclo foi detectado.
+	
+	Altere o programa para identificar se há algum ciclo fechado, considerando início em todas as chaves.
+
+\end{enumerate}

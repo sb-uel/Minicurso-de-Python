@@ -1,0 +1,208 @@
+\begin{enumerate}
+	\item Crie um programa que leia um arquivo TXT e escreva-o em outro arquivo TXT com todas as letras maiúsculas.
+	
+	\item Crie um programa que leia um arquivo TXT e escreva-o em outro arquivo TXT quebrando as linhas para que não sejam maiores que $L$ caracteres.
+	Não quebre palavras no meio, dê enter no espaço anterior da palavra, se ela não couber.
+	Se uma expressão for dividida por \texttt{-} e for preciso quebrá-la depois dele, mantenha na linha até o hífen e jogue o restante na linha seguinte.
+	
+	\item Crie um programa que leia um arquivo TXT e, para cada linha, informe se é um palíndromo ou não (considerando somente as letras, sem diferenciar maiúsculas e minúsculas).
+	
+	\texttt{666} $\rightarrow$ É palíndromo
+	
+	\texttt{007} $\rightarrow$ Não é
+	
+	\texttt{101} $\rightarrow$ É palíndromo
+	
+	\texttt{Ovo} $\rightarrow$ É palíndromo 
+	
+	\texttt{Uva} $\rightarrow$ Não é
+	
+	\texttt{Arara} $\rightarrow$ É palíndromo 
+	
+	\texttt{Urubu} $\rightarrow$ Não é
+	
+	\texttt{Subi no onibus} $\rightarrow$ É palíndromo 
+	
+	\texttt{Subi no onibus em Marrocos} $\rightarrow$ Não é
+	
+	\texttt{Socorram-me, subi no onibus em Marrocos} $\rightarrow$ É palíndromo
+	
+%	Bingo
+	\item Faça um programa que gere $n$ cartelas de bingo em um arquivo TXT, cada uma com 24 números de 1 a 60 em forma de quadrado (com o valor central substituído por um um X ou algum valor não numérico).
+	
+	Tente formatar o quadrado de maneira a alinhar os número de uma mesma coluna com espaços em branco.		
+
+%\vfill	
+
+%CSV
+	
+%	Jogo da velha
+	\item Faça um programa que leia um arquivo CSV com o resultado de um jogo da velha e identifique se X venceu, O venceu, ou se deu velha.
+	Informe também caso o jogo seja inválido, se algum jogador jogou 2 ou mais vezes a mais que o outro. 
+	
+		
+		
+		\texttt{aula4.exercicio5.v.csv}
+		$\rightarrow$
+		Deu velha
+		
+		\texttt{aula4.exercicio5.x.csv}
+		$\rightarrow$
+		X venceu	
+	
+		\texttt{aula4.exercicio5.o.csv}
+		$\rightarrow$
+		O venceu
+		
+		\texttt{aula4.exercicio5.i.csv} 
+		$\rightarrow$ 
+		Inválido: O jogou mais que X
+		
+%	Quadrado mágico
+	\item Faça um programa que leia um arquivo CSV com números organizados em um quadrado e verifique se eles formam um quadrado mágico (a soma de cada linha, coluna e diagonal é igual).
+	
+		\texttt{aula4.exercicio6.a.csv}
+		$\rightarrow$
+		É quadrado mágico
+		
+		\texttt{aula4.exercicio6.b.csv}
+		$\rightarrow$
+		É quadrado mágico	
+		
+		\texttt{aula4.exercicio6.c.csv}
+		$\rightarrow$
+		Não é mágico
+		
+\quebra		
+	
+%	Sudoku resolvido 
+	\item Faça um programa que leia um arquivo CSV com uma possível solução de sudoku e verifique se ela é válida (cada linha, coluna e quadrado tem todas as possibilidades, sem repetição).
+	Se a solução for incorreta, informe onde foi encontrado problema (informe só o primeiro problema encontrado e pare o programa).
+	
+		\texttt{aula4.exercicio7.s.csv}
+		$\rightarrow$
+		Solução correta
+		
+		\texttt{aula4.exercicio7.i.csv}
+		$\rightarrow$
+		Solução inválida: 
+		5 se repete na linha 5 /
+		4 se repete na linha 6 /
+		5 se repete no quadrado esquerdo /
+		4 se repete no quadrado inferior esquerdo 
+		
+		
+	
+		
+\quebra	
+
+%	Triângulo de Pascal	
+	\item Faça um programa que escreva as primeiras $n$ linhas do Triângulo de Pascal em um arquivo CSV.
+	
+	\item Faça um programa que escreva as primeiras $n$ linhas do Triângulo de Pascal em um arquivo TXT.
+	
+	Tente centralizar os números.
+
+\quebra	
+
+%	Fatores primos 
+	\item Faça um programa que leia um arquivo CSV com inteiros e escreva um novo arquivo CSV com a lista de fatores primos de cada número.
+	
+	Tente fazer o programa ler um inteiro por linha e escrever a lista horizontalmente ao lado ou, alternativamente, ler um inteiro por coluna e listar verticalmente abaixo os fatores primos dele.
+	
+	\texttt{aula4.exercicio10.h.csv} 
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio10.h.res.csv}
+	
+	\texttt{aula4.exercicio10.v.csv} 
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio10.v.res.csv}
+	
+\quebra	
+	
+%	Divisores
+	\item Faça um programa que leia um arquivo CSV com inteiros e escreva um novo arquivo CSV com a lista de divisores positivos de cada número.
+	
+	Tente fazer o programa ler um inteiro por linha e escrever a lista horizontalmente ao lado ou, alternativamente, ler um inteiro por coluna e listar verticalmente abaixo os divisores dele.
+	
+	\texttt{aula4.exercicio10.h.csv} 
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio11.h.res.csv}
+	
+	\texttt{aula4.exercicio10.v.csv} 
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio11.v.res.csv}
+
+\quebra	
+
+%	Frequência e nota
+	\item Faça um programa que leia dois arquivos CSV com as colunas de matrícula e nome. 
+	
+	O primeiro deles terá, ao lado das colunas de matrícula e nome, as presenças P ou faltas F.
+	A primeira linha terá as identificações das colunas: \texttt{Matrícula}, \texttt{Nome} e as datas das aulas.
+	
+	O segundo terá, ao lado da coluna de matrícula e nome, as notas nas avaliações.
+	A primeira linha terá as identificações das colunas: \texttt{Matrícula}, \texttt{Nome} e os pesos das avaliações.
+	
+	Crie um arquivo CSV com matrícula, nome, frequência, média ponderada e situação (\texttt{Aprovado}, \texttt{Exame}, \texttt{Reprovado por Nota}, \texttt{Reprovado por Falta} ou \texttt{Reprovado por Nota e Falta}).
+	
+	Ordene o CSV de resultado em ordem alfabética de nome.
+	
+	Tente fazer seu programa aceitar as colunas de nome e matrícula trocadas de posição também.
+	
+	\texttt{aula4.exercicio12.p.csv} \\	
+	\texttt{aula4.exercicio12.n.csv} \\ 
+	$\rightarrow$
+	\texttt{aula4.exercicio12.res.csv}
+
+\quebra
+	
+%	Votos válidos
+	\item Faça um programa que leia um arquivo CSV que mostre votos brancos, nulos e para cada candidato (representado pelo seu número) por cidade
+	e escreva um arquivo CSV com a porcentagem de votos válidos para cada candidato por cidade, bem como as porcentagens totais.
+	
+	Indique também, para cada cidade e para o total, qual candidato venceu.
+
+	\texttt{aula4.exercicio13.csv}  
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio13.res.csv}
+
+\quebra	
+
+%	Receita
+	\item Faça um programa que leia um arquivo CSV com as colunas de ingrediente e quantidade para uma receita.
+	Na primeira linha estarão as identificações das colunas: \texttt{Ingrediente} e o tamanho da receita.
+	
+	Receba o tamanho da porção desejada e escreva um arquivo CSV com mais uma coluna com as quantidades de cada ingrediente necessárias para a porção.
+	
+	\texttt{aula4.exercicio14.csv}  
+	\\ $\rightarrow$
+	\texttt{aula4.exercicio14.res.csv}
+
+\quebra	
+
+%	Sistema linear escalonado
+	\item Faça um programa que leia um arquivo CSV com uma matriz escalonada e a coluna de igualdades do sistema linear e exiba os valores da solução. 
+	
+	Aceite coeficientes nulos representados por 0 ou por célula vazia.
+	Tente aceitar escalonamento triangular superior, inferior ou mesmo mudança de ordem das linhas.
+	
+	\texttt{aula4.exercicio15.s.csv}
+	\\ $\rightarrow 4.444444444444444, 6.666666666666667, -3.3333333333333335, 10$
+	
+	\texttt{aula4.exercicio15.i.csv}
+	$\rightarrow 2, 4.5, 1.5, 0$
+	
+	\texttt{aula4.exercicio15.d.csv}
+	$\rightarrow 10, -40, 60$
+	
+	
+
+%	Área e perímetro do triângulo
+	\item Faça um programa que leia um arquivo CSV com as coordenadas de 3 pontos (um ponto por linha), calcule as distâncias euclidianas entre eles e exiba o perímetro e a área do triângulo formado por esses 3 pontos.
+	
+	Tente fazer seu programa aceitar pontos bidimensionais, tridimensionais.... com qualquer quantidade de dimensões.
+
+\end{enumerate}
+
+Tente receber todas as entradas dos programas (os nomes dos arquivos de entrada e saída e qualquer entrada do usuário) pela linha de comando, ao invés de utilizar valores fixos ou \texttt{input}

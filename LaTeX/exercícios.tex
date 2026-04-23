@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.3in,letterpaper]{geometry}
+\input{cabeçalhos}
+
+\newcommand{\quebra}{}
+%\newcommand{\modo}[2]{}
+\newcommand{\modo}[2]{
+%	#2
+} % claro ou escuro
+
+%opening
+\title{\textbf{Exercícios}: Python}
+\date{}
+
+\begin{document}
+\sffamily
+\maketitle
+
+\section{Elementos básicos}
+\begin{multicols}{2}
+	\subsection{Dados}
+		\input{1/aula1_exercícios}	
+		
+	\vfill 	
+		
+	\subsection{Fluxo}	
+		\input{2/aula2_exercícios}
+\end{multicols}
+
+	\vfill \ 	
+	\newpage
+
+\section{Elementos avançados}
+\begin{multicols}{2}	
+	\subsection*{Funções e Pacotes}
+		\input{3/aula3_exercícios}				
+\end{multicols}
+
+	\vfill \ 	
+	\newpage
+
+\section{Arquivos}
+\begin{multicols}{2}	
+	\subsection*{Texto e CSV}
+		\input{4/aula4_exercícios}				
+\end{multicols}
+
+\vfill
+\tableofcontents
+\end{document}

@@ -1,0 +1,345 @@
+\begin{enumerate}
+	\modo{}{\color{white}}
+
+	\item Faça um programa que mostre a data e hora do sistema.
+	
+	\item Faça um programa que mostre o seu próprio nome (nome do arquivo do script).
+	Seu programa deve ser capaz, sem ser editado, de mostrar o nome correto mesmo que o arquivo seja renomeado.
+
+% 3 ângulos 	
+	\item Altere o programa de conversão de ângulos (graus, radianos e grados) 
+	para que cada fórmula seja uma função separada, independente da forma de entrada.
+	
+	Faça também, como uma função separada, a verificação de se o ângulo é agudo, reto, obtuso ou raso.
+	
+	Tente reduzir as definições de fórmulas reutilizando funções dentro das definições das outras.
+	
+	\textbf{Dica}: escolha uma unidade de ângulo e utilize as fórmulas de conversão de e para ela para definir as outras.
+
+% 4 temperatura 
+	\item Altere o programa de conversão de temperatura (Celsius, Fahrenheit e Kelvin) 
+	para que cada fórmula seja uma função separada, independente da forma de entrada.
+	
+	Faça também, como uma função separada, a verificação do estado físico da água destilada no nível do mar.
+	
+	Tente reduzir as definições de fórmulas reutilizando funções dentro das definições das outras.
+	
+	\textbf{Dica}: escolha uma unidade de temperatura e utilize as fórmulas de conversão de e para ela para definir as outras. 
+
+	
+% 5 ano bissexto 
+	\item Altere o programa de verificação de ano bissexto para que as verificações dos calendários juliano e gregoriano sejam funções separadas, independentes da forma de entrada. 
+	
+	Utilizando essas funções, crie uma função que receba o ano e o mês e retorne quantos dias ele tem.
+	
+	\quebra
+	
+	
+	\item Faça um programa que verifique se o texto é palíndromo (sua reflexão é igual) em uma função. 
+	
+	Desconsidere espaços e pontuação e considere letras maiúsculas e minúsculas iguais.
+	
+	São palíndromos: 
+	
+	\texttt{666}
+	
+	\texttt{101}
+	
+	\texttt{Ovo} 
+	
+	\texttt{Arara} 
+	
+	\texttt{Subi no onibus} 
+	
+	\texttt{Socorram-me, subi no onibus em Marrocos}
+		 
+	
+	\item Faça um programa que calcule em uma função a distância de Manhattan (métrica retangular, metropolitana ou de táxi) entre dois pontos e exiba o resultado. 
+	
+	A distância de Manhattan entre dois pontos é definida como a soma dos valores absolutos das diferenças das coordenadas em cada dimensão.
+	Para pontos $A$ e $B$ bidimensionais, ela é 
+	
+	\begin{equation*}
+		|A_x - B_x| + |A_y - B_y|
+	\end{equation*}	
+	
+	Para pontos $A$ e $B$ com $d$ dimensões, ela é
+	
+	\begin{equation*}
+		\sum_{i=1}^d|A_i - B_i|
+	\end{equation*}
+	
+	\item Faça um programa que calcule em uma função a distância de Chebyshev (Tchebychev ou métrica máxima) entre dois pontos e exiba o resultado.
+	
+	A distância de Chebyshev, também chamada de chessboard, é a distância máxima entre os valores absolutos das diferenças das coordenadas de cada dimensão dos pontos.
+	Para pontos $A$ e $B$ com $d$ dimensões, ela é
+	
+	\begin{equation*}
+		\max\{|A_i - B_i| \ | 1 \le i \le d \}
+	\end{equation*}
+	
+% 9 distância euclidiana 
+	\item Faça um programa que calcule em uma função a distância euclidiana entre dois pontos e exiba o resultado. 
+
+	\item Faça um programa que calcule em uma função a distância de Minkowski e exiba o resultado.
+	
+	Para pontos $A$ e $B$ com $d$ dimensões, ela é
+	
+	\begin{equation*}
+		\sqrt[s]{\sum_{i=1}^d|A_i - B_i|^s}
+	\end{equation*}
+	
+	dado um parâmetro $s$ fixado.
+	
+	Altere os programas da distância euclidiana e da distância de Manhattan para utilizarem essa função ao invés de definições próprias.
+
+% 11 teorema de heron 
+
+	\item Faça um programa que calcule a área do triângulo usando o Teorema de Heron em uma função separada independente do formato de entrada e exiba o resultado.
+	
+% 12 condição de existência do triângulo 
+
+	\item Faça um programa que verifique se os comprimentos dos lados $a$, $b$ e $c$ podem construir um triângulo plano em uma função separada independente do formato de entrada e exiba o resultado.	
+	
+% 13 equilátero, isósceles ou escaleno 
+
+	\item Faça um programa que verifique se o triângulo é equilátero, isósceles ou escaleno em uma função separada independente do formato de entrada e exiba o resultado.
+	
+% 14 polígono regular		
+
+	\item Faça um programa que verifique se a figura geométrica é um polígono regular em uma função separada usando as medidas dos lados como parâmetros, independente do formato de entrada. 
+
+% 15 bháskara / linear 
+
+	\item Faça um programa que calcule as raízes da equação de segundo grau utilizando a fórmula resolutiva ou a raiz da equação de primeiro grau, se for.
+	Faça as fórmulas resolutivas em funções separadas e a função geral utilizando as definições delas.
+	
+
+% 16 sistema escalonado 
+
+	\item Faça um programa que, em uma função separada, calcule e retorne os resultados de um sistema linear escalonado fornecido como parâmetro.
+	
+	\quebra
+	
+	\item Sem utilizar as operações de multiplicação e exponenciação crie as seguintes funções:
+	
+	Sucessão de $a$: 
+	$a + 1$
+	
+	Adição de $a$ e $b$: 
+	sucessão de $a$ repetida $b$ vezes 
+	
+	\begin{equation*}
+		a + b = a\underbrace{ + 1 + 1 + \cdots + 1}_b
+	\end{equation*}
+	
+	
+	Multiplicação de $a$ por $b$: 
+	adição de $a$ com $a$, $b$ vezes  	
+	
+	\begin{equation*}
+		a \times b = \underbrace{a + a + a + \cdots + a}_b
+	\end{equation*}
+	
+	Exponenciação de $a$ a $b$: 
+	multiplicação de $a$ por $a$, $b$ vezes  
+	
+	\begin{equation*}
+		a^b = a\uparrow b = \underbrace{a \times a \times a \times \cdots \times a}_b
+	\end{equation*}
+	
+	Tetração (superexponenciação, hiperpotência ou torre de potências) de $a$ a $b$: 
+	exponenciação de $a$ a $a$, $b$ vezes
+	
+	\begin{equation*}
+		a\uparrow \uparrow b 
+		= \underbrace{a \uparrow (a \uparrow (a \uparrow \cdots \uparrow a))}_b 
+		= \underbrace{a^{\left(a^{\left(a^{\iddots^a}\right)}\right)}}_b	
+	\end{equation*}
+	
+	Pentação de $a$ a $b$:
+	tetração de $a$ a $a$, $b$ vezes
+	
+	\begin{equation*}
+		a\uparrow \uparrow \uparrow b 
+		= \underbrace{a \uparrow\uparrow (a \uparrow\uparrow (a \uparrow\uparrow \cdots \uparrow\uparrow a))}_b 			 	
+	\end{equation*}
+	
+	Utilize as definições das operações menores nas definições das maiores.
+	
+\quebra		
+	
+	\item Redefina as funções de sucessão, adição, multiplicação, exponenciação, tetração, pentação e hexação utilizando uma função básica que receba $a$, $b$ e $h$ como parâmetros e faça:
+	
+	\begin{multicols}{2}			
+		
+		se $h=0$, 
+		$a + 1$
+		
+		se $h=1$, 
+		$a + b$ 
+		
+		se $h=2$, 
+		$a \times b$ 
+		
+		se $h=3$, 
+		$a^b$ 
+		
+		se $h=4$,
+		$a \uparrow \uparrow b$ 
+		
+		se $h=5$,
+		$a \uparrow \uparrow \uparrow b$ 
+		
+		se $h=6$,
+		$a \uparrow \uparrow \uparrow \uparrow b$ 
+		
+		\centering
+		
+		$\vdots$
+		
+		$a \underbrace{\uparrow \uparrow \uparrow \cdots \uparrow}_{h-2} b$
+		
+	\end{multicols}
+	
+\quebra 
+	
+	\item Faça um programa que calcule a função de Ackermann $A(m,n)$:
+	
+	\begin{equation*}		  
+		\begin{cases}			
+			n + 1 
+				& \text{se} \ m = 0 \\
+			A(m-1,1) 
+				& \text{se} \ m > 0 
+				\ \text{e} \ n = 0 \\
+			A(m-1,A(m,n-1)) 
+				& \text{se} \ m > 0  		
+				\ \text{e} \ n > 0
+		\end{cases}
+	\end{equation*}
+
+\quebra
+
+% 20 triângulo de pascal  
+
+	\item Faça um programa que, em uma função separada, calcule e retorne as primeiras $n$ linhas do Triângulo de Pascal e, depois, exiba-as.
+
+% 21 fatorial 
+
+	\item Faça um programa que calcule $n!$ em uma função separada e exiba o retorno.
+
+% 22 arranjo simples 		
+
+	\item Faça um programa que calcule o arranjo simples $A^k_n$ em uma função separada e exiba o retorno.
+	
+	Tente utilizar a definição da função de fatorial neste exercício.
+	
+	Faça uma outra versão em que a definição de $n!$ utiliza a definição de arranjo simples.
+
+% 23 número binomial 
+
+	\item Faça um programa que calcule o número binomial $C^k_n$ em uma função separada e exiba o retorno.
+	
+	Tente utilizar a definição de fatorial ou de arranjo simples neste exercício.
+
+
+\quebra 
+
+% 24 fibonacci 
+
+	\item Faça um programa que calcule o enésimo termo da sequência de Fibonacci em uma função.	
+	Tente usar a definição recursiva.	
+	
+% 25 tipo fibonacci 
+
+	\item Faça um programa que calcule o enésimo termo de uma sequência parecida com a de Fibonacci em uma função que receba os $k$ primeiros termos e calcule cada termo como a soma dos $k$ anteriores.
+	Tente usar a definição recursiva.
+	
+	Redefina a função para sequência de Fibonacci para utilizar esta definição.
+	
+% 26 primo 
+
+	\item Crie um programa que verifique se um inteiro $p$ é primo em uma função.	
+	
+% 27 PA
+
+	\item Crie um programa que calcule a soma dos $n$ primeiros termos de uma PA em uma função.
+	
+	Crie também uma função para calcular o enésimo termo e uma definição alternativa da soma dos termos com essa função.
+	
+% 28 PG
+
+	\item Crie um programa que calcule a soma dos $n$ primeiros termos de uma PG em uma função.
+	
+	Crie também uma função para calcular o enésimo termo e uma definição alternativa da soma dos termos com essa função.
+
+% 29 juros simples 
+
+	\item Crie um programa que calcule o montante em regime de juros simples em uma função.	
+	Tente utilizar a definição da função da PA. 		
+
+% 30 juros compostos 
+
+	\item Crie um programa que calcule o montante em regime de juros compostos em uma função.	
+	Tente utilizar a definição da função da PG.
+	
+	Altere também os programas de juros para calcular o montante período a período em uma função e aceitar, para cada termo, o valor do pagamento da parcela e descontar do montante até o valor ser quitado.
+
+% 31 média 
+
+	\item Crie um programa que calcule em uma função a média ponderada recebendo as notas das avaliações e seus pesos.	
+	
+	Crie uma outra função que verifique se a nota está azul, se terá exame ou se reprovará.
+	
+	Inclua as faltas para verificar se haverá reprovação por falta.
+	Faça uma última função que receba todos os dados e retorne a situação de aprovação, exame, reprovação por nota, reprovação por falta ou reprovação por falta e nota. 
+	
+	\item Faça uma função que receba as quantidades de votos dos candidatos, brancos e nulo e retorne as porcentagens de votos válidos de cada candidato.
+	
+	\item Faça uma função que receba os nomes e as quantidades dos ingredientes, o tamanho da porção da receita e o tamanho da porção desejada e retorne as quantidades necessárias para a porção desejada.
+	
+	\item Faça uma função que sorteie um número de 1 a 6.
+	
+	\item Faça uma função que sorteie 6 números de 1 a 60, sem repetir nenhum.
+	
+	\item Faça funções que calculem média, mediana e moda dos valores de uma lista.
+	
+	\item Faça funções que calculem média, mediana e moda das chaves de um dicionário em que seus valores são suas frequências.
+
+% 38 fatores primos
+
+	\item Faça uma função que receba um inteiro e retorne a sua decomposição em fatores primos.
+	
+	Crie duas versões: retornando a lista de fatores, repetindo os que forem necessários, e um mapa de potências e expoentes.
+
+% 39 divisores positivos 
+
+	\item Faça uma função que receba um inteiro e retorne seus divisores positivos.
+
+% 40 perfeito 
+
+	\item Faça uma função que receba um inteiro e retorne se ele é um número perfeito. 
+
+% 41 amigos 
+
+	\item Faça uma função que receba dois inteiros e retorne se eles são amigos.
+	
+	Faça outra função que receba um conjunto de inteiros e retorne se são um ciclo de amigos.
+	Redefina a primeira função para ela utilizar a definição desta.
+
+% numerais romanos
+
+	\item Faça uma função que receba um inteiro positivo e retorne sua representação em numerais romanos. 
+	
+	Faça também uma função que receba um numeral romano e retorne seu valor.
+
+	Lembre-se que os numerais romanos somam valores $I = 1$, $V = 5$, $X = 10$, $L = 50$, $C = 100$, $D = 500$ e $M = 1000$ em ordem decrescente.
+	Quando uma letra de valor menor preceder uma de valor maior, ela é subtraída da maior: $XIV = 10 + 5 - 1 = 14$
+	
+	Lembre-se também que os numerais podem usar letras minúsculas.
+
+	
+%	Dia do triângulo pitagórico 	 
+
+\end{enumerate}

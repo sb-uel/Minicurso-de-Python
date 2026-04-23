@@ -1,0 +1,259 @@
+\input{../início}	
+
+\iniciar{3}{Funções e Pacotes}{}		  
+
+\subsection{Todos os nomes são Variáveis}
+
+\section{Funções}
+
+	\begin{frame}{O que são funções?}
+		Trechos de código armazenados e nomeados.
+		
+		São executados quando são chamados pelo nome usando \texttt{()}
+		
+%		\vfill \ \vfill
+		\vfill
+		
+		A depender da definição da função:
+		
+%		\vfill 
+		
+%		\hfill 
+		pode ser possível inserir parâmetros na função (variáveis de entrada) nos parênteses da chamada.
+		
+%		\vfill 
+		
+		\hfill
+		e que valores sejam retornados pela função. 
+		
+%		\vfill				
+	\end{frame}
+	
+	\begin{frame}
+%		conteúdo...
+		
+		
+		\textbf{Vantagens}:
+		
+%		\begin{multicols}{2}
+			\begin{itemize}
+				\item Redução da repetição  
+				\item Fácil alteração 
+				\item Simplificação 
+			\end{itemize}
+%		\end{multicols}
+		
+	\end{frame}
+
+	\subsection{Funções nativas}
+	\begin{frame}
+%		conteúdo...	
+	\begin{multicols}{3}
+%		conteúdo...
+	
+		\begin{itemize}
+			\item \texttt{print} 
+			\item \texttt{input}	
+			
+		\vfill 
+			
+			\item \texttt{str}	
+			\item \texttt{bool} 
+			\item \texttt{int}, \texttt{float} e \texttt{complex} 
+			\item \texttt{list} e \texttt{tuple}
+			\item \texttt{dict} e \texttt{set}
+	
+		\vfill
+	
+			\item \texttt{hex}
+			\item \texttt{oct}
+			\item \texttt{bin}
+		
+		\vfill 	
+		
+			\item \texttt{len}		
+			\item \texttt{abs}
+			\item \texttt{round}
+
+		\vfill 
+	
+			\item \texttt{id}
+
+				
+			\item \texttt{type}
+			\item \texttt{dir}
+			
+		\vfill	
+			
+			\item ....
+	
+		\end{itemize}
+	\end{multicols}
+	\end{frame}
+	
+	\subsection{Definição}
+	
+	\begin{frame}[containsverbatim]{Definição}
+%		conteúdo...
+
+		A definição da função deverá ter um nome válido como variável.
+		
+		As ações podem incluir estruturas condicionais, laços de repetição, chamadas de funções e quaisquer operações. 
+
+		\begin{verbatim}
+			def nome_da_funcao ():
+				
+				acoes
+		\end{verbatim}
+
+	\end{frame}
+	
+	\begin{frame}[containsverbatim]
+		%		conteúdo...
+		
+		Utilize \texttt{global} para acessar e alterar variáveis criadas fora da função.
+		
+		\begin{verbatim}
+			def funcao ():
+			
+				global v
+				
+				acoes				
+			
+		\end{verbatim}
+		
+	\end{frame}
+	
+	\begin{frame}[containsverbatim]
+		%		conteúdo...
+		
+		Utilize \texttt{return} para retornar algum valor para o local de chamada.				
+		
+		As variáveis entre parênteses na declaração são recebidas como parâmetros.
+		
+		\begin{verbatim}
+			def nome_da_outra (x, y, z):
+			
+				acoes
+				
+				return valor
+		\end{verbatim}
+		
+	\end{frame}
+	
+	
+	
+	\subsection{Uso}
+	
+	\begin{frame}[containsverbatim]{Uso}
+		%		conteúdo...
+		
+		Para chamar uma função, use o nome dela e coloque parênteses depois.
+		
+		\begin{verbatim}
+			nome_da_funcao()						
+			
+			w = nome_da_outra(a,b,c)
+		\end{verbatim}
+		
+	\end{frame}
+	
+	\subsection{Funções também são Variáveis}
+
+\section{Pacotes}
+
+	\subsection{Pacotes nativos}
+	
+	\begin{frame}
+		%		conteúdo...	
+		\begin{multicols}{3}
+			%		conteúdo...
+			
+			\begin{itemize}
+				\item \texttt{time}
+				\item \texttt{tkinter}
+				
+				\vfill 
+				 
+				\item \texttt{sys}									 				
+				\item \texttt{os}	
+				
+				\vfill 
+				
+				 
+				\item \texttt{math} 					
+				
+				\item ....
+				
+			\end{itemize}
+		\end{multicols}
+		
+		\vfill \hfill 
+	\end{frame}	
+	
+	\begin{frame}{Importação de pacotes}
+		
+		Importe o pacote que você quer utilizar no seu programa com 
+		
+		\texttt{import nomedopacote}
+		
+		E, depois, para utilizar funções dele, utilize o nome e \texttt{.}
+		
+		\texttt{nomedopacote.funcao()}
+	\end{frame}
+	
+	\subsection{Instalação de pacotes}
+	
+	\begin{frame}
+		%		conteúdo...	
+		\begin{multicols}{3}
+			%		conteúdo...
+			
+			\begin{itemize}
+				\item \texttt{numpy}
+				\item \texttt{scipy}
+				
+				\vfill 
+				
+				\item \texttt{scikit-learn}									 				
+				\item \texttt{pandas}	
+				
+				\vfill 
+				
+				
+				\item \texttt{matplotlib} 					
+				
+				\item ....
+				
+			\end{itemize}
+		\end{multicols}
+		
+		\vfill  				
+		
+		\hfill
+		\texttt{python3 -m pip install nomedopacote}
+		
+		\hfill
+		\texttt{python -m pip install nomedopacote}
+		
+		\hfill
+		\texttt{py -m pip install nomedopacote}
+		
+	\end{frame}	
+
+	\begin{frame}
+%	conteúdo...
+	
+		
+		Se o seu sistema recusar a instalação de pacotes via \link{https://packaging.python.org/en/latest/tutorials/installing-packages/}{pip}, você talvez precise usar ambientes virtuais 
+		(\link{https://docs.python.org/pt-br/3/library/venv.html}{venv}) 		
+		ou instalar diretamente pelo gerenciador do sistema 
+		(\texttt{apt}, por exemplo)
+		
+	\end{frame} 
+	
+	 
+	
+	\subsection{Pacotes também são Variáveis}
+
+\terminar{3}

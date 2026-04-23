@@ -1,0 +1,358 @@
+\begin{enumerate}
+	\modo{}{\color{white}}
+
+	\item Crie um programa que exiba 
+	uma linha de texto 
+	de sua preferência.
+	
+	\item Crie um programa que exiba 
+	uma linha de texto 
+	escrita pelo usuário.
+
+%\vfill 
+
+% dados simples 
+
+	\item Crie um programa que exiba 
+	um número 
+	inteiro 
+	da sua preferência.
+	
+	\item Crie um programa que exiba 
+	um número 
+	inteiro 
+	escrito pelo usuário.
+
+%\vfill
+
+	\item Crie um programa que exiba 
+	um número 
+	de ponto flutuante 
+	da sua preferência.
+	
+	\item Crie um programa que exiba 
+	um número 
+	de ponto flutuante 
+	escrito pelo usuário.
+
+%\vfill
+
+% operações 
+
+\quebra
+	
+\textbf{Faça versões dos seguintes exercícios com e sem entrada de dados, experimente também com números inteiros e de ponto flutuante}		
+	
+	\item Crie um programa que exiba 
+	a soma 
+	de dois números.
+	
+	\item Crie um programa que exiba 
+	a subtração 
+	de dois números.
+	
+	\item Crie um programa que exiba 
+	a multiplicação 
+	de dois números.
+	
+	\item Crie um programa que exiba 
+	a divisão  
+	de dois números.
+
+%\vfill 
+
+\quebra
+\textbf{Para os próximos exercícios, identifique quais são os tipos de dados que devem ser utilizados}
+
+	\item Crie um programa que faça 
+	a conversão de 
+	graus para radianos 
+	para um ângulo 
+	escrito pelo usuário.
+	
+		\begin{equation*}
+			r = \frac{\pi g}{180^\circ} 			
+		\end{equation*}
+		
+	\item Crie um programa que faça 
+	a conversão de 
+	radianos para graus 
+	para um ângulo 
+	escrito pelo usuário.
+	
+		\begin{equation*}
+			g = \frac{180^\circ r}{\pi} 			
+		\end{equation*}	
+
+	\item Crie um programa que faça 
+	a conversão de 
+	graus Celsius para Fahrenheit 
+	para uma temperatura 
+	escrita pelo usuário.
+	
+	Tente com as duas fórmulas:
+
+	\begin{multicols}{2}			
+		\begin{equation*}
+			F = \frac{9C}{5} + 32			
+		\end{equation*}
+		
+		\begin{equation*}
+			F = 1,8C + 32
+		\end{equation*}	
+	\end{multicols}	
+	\item Crie um programa que faça 
+	a conversão de 
+	graus Fahrenheit para Celsius
+	para uma temperatura 
+	escrita pelo usuário.
+	
+	Tente com as duas fórmulas:
+	\begin{multicols}{2}
+		\begin{equation*}
+			C = \frac{5(F-32)}{9} 			
+		\end{equation*}
+		
+		\begin{equation*}
+			C = \frac{F-32}{1,8}
+		\end{equation*}	
+	\end{multicols}
+%\vfill 
+
+\quebra	
+
+	\item Faça um programa que receba 
+	um preço do usuário 
+	e exiba com quantas moedas de 
+	1 real e de 1 centavo se pode pagá-lo,
+	sem troco.  
+	
+	Depois, altere o programa para utilizar 
+	notas de 100, 50, 20, 10, 5 e 2 reais  
+	e moedas de 50, 25, 10 e 5 centavos.
+
+%\vfill
+	
+	\item Faça um programa que receba 
+	uma duração de tempo em segundos 
+	do usuário e exiba-a em 
+	horas, minutos e segundos.
+	
+	Altere para adicionar dias também.
+
+%\vfill
+
+	\item Faça um programa que receba dois dias e horas e exiba o tempo decorrido entre eles.
+	
+	Altere para considerar fuso horário também. 
+
+	\item Faça um programa que receba as coordenadas $x$ e $y$ de dois pontos e exiba a distância euclidiana entre eles.
+	
+	\begin{equation*}
+		d(a,b) = \sqrt{(A_x - B_x)^2 + (A_y - B_y)^2}
+	\end{equation*}
+	
+	Tente fazer usando o tipo complexo.
+	
+	Altere para considerar também a coordenada $z$.
+	
+	\begin{equation*}
+		d(a,b) = \sqrt{(A_x - B_x)^2 + (A_y - B_y)^2 + (A_z - B_z)^2}
+	\end{equation*}
+	
+	Tente também fazer usando listas.
+	
+	\item Faça um programa que receba o raio $r$ e exiba o comprimento da circunferência $C$, a área do círculo $A_c$, a área superficial da esfera $A_s$ e o volume da esfera $V$.
+	
+	\begin{multicols}{2}
+			
+		\begin{equation*}
+			C = 2 \pi r
+		\end{equation*}
+		
+		\begin{equation*}
+			A_c = \pi r^2
+		\end{equation*}		
+		
+		\begin{equation*}
+			V = \frac{4}{3} \pi r^3
+		\end{equation*}
+		
+		\begin{equation*}
+			A_s = 4 \pi r^2
+		\end{equation*}
+		
+	\end{multicols}
+	
+\quebra	
+	
+	\item Faça um programa que receba os comprimentos $a$, $b$ e $c$ dos lados de um triângulo e exiba a área de acordo com o Teorema de Heron:
+	
+	\begin{equation*}
+		A = \sqrt{p(p-a)(p-b)(p-c)}
+	\end{equation*}	
+	
+	Onde $p$ é o semiperímetro:
+	
+	\begin{equation*}
+		p = \frac{a+b+c}{2}
+	\end{equation*}
+	
+\quebra	
+	
+	\item Faça um programa que receba os coeficientes $a$ e $b$ de uma função linear e a variável $x$ e exiba o valor de $y$.
+	
+	\begin{equation*}
+		f(x)  = y = ax + b
+	\end{equation*}
+	
+	\item Faça um programa que receba os coeficientes $a$, $b$ e $c$ de uma função quadrática e a variável $x$ e exiba o valor de $y$.
+	
+	\begin{equation*}
+		f(x)  = y = ax^2 + bx + c
+ 	\end{equation*}
+	
+	\item Faça um programa que receba os coeficientes $a$, $b$ e $c$ de uma função exponencial e a variável $x$ e exiba o valor de $y$.
+	
+	\begin{equation*}
+		f(x)  = y = a^{x + b} + c
+	\end{equation*}		
+	
+	\item Faça um programa que receba os coeficientes $a$, $b$ e $c$ de uma equação quadrática e exiba as raízes $x_1$ e $x_2$.
+	
+	\begin{equation*}
+		ax^2 + bx + c = 0
+	\end{equation*}
+	
+	Utilize a fórmula resolutiva das equações de segundo grau:
+	
+	
+	\begin{multicols}{2}
+		\begin{equation*}
+			\Delta = b^2 - 4ac
+		\end{equation*} 		
+		
+		\begin{equation*}
+			x = \frac{-b \pm \sqrt{\Delta}}{2a}
+		\end{equation*}
+	\end{multicols}
+	
+	
+	
+	\item Faça um programa que receba os coeficientes $a$ e $b$ de uma equação linear e exiba a incógnita $x$.
+	
+	\begin{multicols}{2}
+		\begin{equation*}
+			ax + b = 0
+		\end{equation*} 
+		
+		\begin{equation*}
+			x = \frac{-b}{a}
+		\end{equation*}
+	\end{multicols}	
+	
+\quebra	
+
+	\item Faça um programa que receba os coeficientes $A_{11}$, $A_{21}$, $A_{22}$, $A_{31}$, $A_{32}$, $A_{33}$, $b_1$, $b_2$ e $b_3$ de um sistema de equações lineares escalonado e exiba os valores de $x_1$, $x_2$ e $x_3$.
+	
+%	\begin{multicols}{2}			
+%	\begin{equation*}		
+		\begin{align*}
+			A_{11} x_1 & & &= b_1 	\\
+			A_{21} x_1 &+ A_{22} x_2 & &= b_2 		\\
+			A_{31} x_1 &+ A_{32} x_2 &+ A_{33} x_3 &= b_3 
+		\end{align*}
+%	\end{equation*}
+		
+\quebra		Utilize a fórmula:
+		
+%	\begin{equation*}		
+		\begin{align*}
+			x_1 & & &= \frac{b_1}{A_{11}} 	
+			\\ & x_2 & &= \frac{b_2 - A_{21} x_1}{A_{22}} 		
+			\\ & & x_3 &= \frac{b_3 - A_{31} x_1 - A_{32} x_2}{A_{33}}
+		\end{align*}
+%	\end{equation*}	
+%	\end{multicols}
+
+		Tente também com listas.	
+		
+\quebra		
+
+	\textbf{Faça código original e depois verifique se há como reaproveitar código de outros exercícios para os próximos}
+	
+	\item Faça um programa que receba os valores de $a_1$, $r$ e $n$ e exiba o enésimo termo $a_n$ da Progressão Aritmética (PA).
+	
+	\begin{equation*}
+		a_n = a_1 + r(n - 1)
+	\end{equation*}
+
+	\item Faça um programa que receba os valores de $a_1$, $q$ e $n$ e exiba o enésimo termo $a_n$ da Progressão Geométrica (PG).
+	
+	\begin{equation*}
+		a_n = a_1q^{n - 1}
+	\end{equation*}
+	
+	\item Faça um programa que receba os valores da velocidade inicial $v_0$, o deslocamento $\Delta s$ e a aceleração $a$ e exiba a velocidade final $v$.
+	
+	Utilize a equação de Torricelli:
+	
+	\begin{equation*}
+		v = \sqrt{v_0^2 + 2 a \Delta s}
+	\end{equation*}
+	
+	\item Faça um programa que receba os valores da velocidade inicial $v_0$, a aceleração $a$ e o tempo $t$ e exiba o deslocamento $\Delta s$.
+	
+	Utilize a equação de deslocamento:
+	
+	\begin{equation*}
+		\Delta s = v_0 t + \frac{a}{2}t^2 
+	\end{equation*}
+	
+\quebra	
+
+	\textbf{Faça os próximos exercícios com variáveis separadas e também com listas}
+
+	\item Faça um programa que receba 
+	as notas da prova 1, da prova 2, 
+	do trabalho e das listas de exercícios, 
+	bem como os pesos de cada uma delas,  
+	e exiba a média ponderada.
+	
+\quebra	
+
+	\item Faça um programa que receba a quantidade de votos dos candidatos 1 e 2, de votos brancos e votos nulos e exiba as porcentagens de votos válidos de cada um dos candidatos.
+	
+	O total de votos válidos é a soma dos votos em candidatos:
+	
+	\begin{equation*}
+		T_v = c_1 + c_2
+	\end{equation*} 
+	
+	E a porcentagem de votos válidos do candidato é a proporção que ele representa desse total
+	
+	\begin{multicols}{2}				
+		\begin{equation*}
+			v_1 = \frac{c_1}{T_v} 100\% 
+		\end{equation*}
+	
+		\begin{equation*}
+			v_2 = \frac{c_2}{T_v} 100\% 
+		\end{equation*}
+	\end{multicols}
+	
+	\item Faça um programa que receba as quantidades de dois ingredientes e seus nomes, o tamanho da porção da receita e o tamanho da porção desejada e exiba os nomes e as quantidades necessárias para a porção esperada.
+
+	\textbf{Para o último exercício, utilize dicionários}
+
+	\item Faça um programa em que estejam registrados os números de matrícula e os nomes dos estudantes de uma turma. 
+	Receba uma matrícula do usuário e exiba o nome do estudante.
+	
+	Registre também as notas e exiba-as para o estudante consultado.
+
+ 
+
+	
+
+	
+\end{enumerate}

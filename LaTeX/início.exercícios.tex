@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.3in,letterpaper]{geometry}
+\input{../cabeçalhos}
+
+\newcommand{\quebra}{}
+\newcommand{\modo}[2]{
+%	#2
+} % claro ou escuro
+
+\newcommand{\lista}[1]{
+	
+	%opening
+	\title{\textbf{Exercícios}: Python}
+	\author{Aula #1}
+	\date{}
+	
+	\begin{document}
+	\sffamily
+	\maketitle
+	
+	\begin{multicols}{2}
+		\input{aula#1_exercícios}			
+		
+		\vfill 	
+		\hfill 
+	\end{multicols}
+	\end{document}
+}	
