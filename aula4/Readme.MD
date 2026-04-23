@@ -7,3 +7,4 @@ Apresentação da aula:
 Lista de exercícios:
 [aula4.exercícios.pdf](./aula4.exercícios.pdf)
 
+Os exemplos de entrada (e, para alguns exercícios, também de saída) para os exercícios com CSV estão na pasta [aula4.exercícios](./aula4.exercícios)
